@@ -1,4 +1,4 @@
-import { Component, signal } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -17,7 +17,8 @@ interface SignUpForm {
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-  ]
+  ],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SignUpFormComponent {
   protected signUpForm = new FormGroup<SignUpForm>({

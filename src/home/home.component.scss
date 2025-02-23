@@ -1,3 +1,64 @@
 :host {
-    padding-block-start: 3em;
+    --card-background: yellow;
+    --card-foreground: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:host {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+app-card {
+    margin-block-end: 3em;
 }

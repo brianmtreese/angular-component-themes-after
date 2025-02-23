@@ -154,8 +154,12 @@ button {
 
 }
 
+aside .ad {
+  margin-block: 1.5em;
+}
+
 main .ad {
-  margin-bottom: 1.5em;
+  margin-block-end: 1.5em;
 }
 
 @media (max-width: 600px) {

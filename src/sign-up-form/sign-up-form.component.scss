@@ -1,92 +1,14 @@
-// 1.
-// :host(.contained) {
-//   border: solid 2px;
-//   display: block;
-//   border-radius: 0.375em; 
-//   background-color: #eee;
-// }
-
-// 2.
 :host {
   border: solid 2px;
   display: block;
   border-radius: 0.375em; 
   background-color: #eee;
+  padding: 3em;
 }
 
 :host-context(app-modal) {
   background-color: unset;
   border: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-:host {
-  padding: 3em;
 }
 
 header {
