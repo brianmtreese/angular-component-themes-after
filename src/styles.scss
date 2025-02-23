@@ -1,0 +1,55 @@
+@use 'scss/base';
+@use 'scss/visually-hidden';
+@use 'scss/mat-text-field';
+
+nav {
+  background-color: #6244b0;
+  padding-block: 1em;;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    &:not(:last-child) {
+      padding-inline-end: 1em;
+      margin-inline-end: 1em;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 1px;
+        background-color: white;
+        position: absolute;
+        inset-inline-end: 0;
+        inset-block: 0;
+      }
+    }
+  }
+
+  a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: scale 0.15s ease-in;
+
+    &:hover {
+      text-decoration: underline;
+      scale: 1.125;
+    }
+
+    &.active::after {
+      background-color: currentColor;
+      content: '';
+      inset: -0.25em -0.5em -0.25em -0.5em;
+      opacity: 0.2;
+      position: absolute;
+    }
+  }
+}

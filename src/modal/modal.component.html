@@ -1,0 +1,9 @@
+<button class="shield" (click)="closed.emit()"><span class="visually-hidden">Close</span></button>
+<article>
+  @if (modalTitle()) {
+      <header>
+      <h2>{{ modalTitle() }}</h2>
+    </header>
+  }
+  <ng-content></ng-content>
+</article>

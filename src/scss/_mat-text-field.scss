@@ -1,0 +1,51 @@
+
+// 1. / 4.
+body {
+  .mdc-text-field--filled {
+    border: solid 1px var(--mat-sys-on-surface-variant);
+    border-radius: 0.75em;
+
+    &.mdc-text-field--invalid {
+      border-color: var(--mat-sys-error);
+    }
+  }
+  
+}
+
+
+
+// 2.
+// app-newsletter-modal {
+//   --mdc-filled-text-field-container-color: transparent;
+//   --mat-form-field-hover-state-layer-opacity: 0;
+
+//   .mdc-text-field {
+//     padding: 0;
+//   }
+
+//   .mdc-text-field--filled {
+//     border: none;
+//     border-radius: 0;
+//   }
+
+// }
+
+
+
+// 3.
+// body {
+
+//   .mdc-text-field--filled {
+//     border: var(--mat-text-field-border, solid 1px var(--mat-sys-on-surface-variant));
+//     border-radius: var(--mat-text-field-radius, 0.75em);
+
+//     &.mdc-text-field--invalid {
+//       border-color: var(--mat-sys-error);
+//     }
+//   }
+
+//   .mdc-text-field {
+//     padding: var(--mat-text-field-padding, 0 16px);
+//   }
+  
+// }
