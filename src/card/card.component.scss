@@ -117,11 +117,11 @@ button {
     }
 }
 
-// 3.
-// :host(.red) {
-//     background-color: #ff495d;
-//     color: white;
-// }
+//3.
+:host(.red) {
+    background-color: #ff495d;
+    color: white;
+}
 
 :host(.purple) {
     background-color: #6244b0;
